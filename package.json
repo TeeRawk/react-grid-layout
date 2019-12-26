@@ -11,9 +11,7 @@
     "view-example": "make view-example",
     "dev": "make dev",
     "prepublishOnly": "make build",
-    "validate": "npm ls",
-    "flow": "flow",
-    "precommit": "lint-staged && make lint"
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",

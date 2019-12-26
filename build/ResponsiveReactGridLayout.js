@@ -305,8 +305,7 @@ var ResponsiveReactGridLayout =
       [
         {
           key: "generateInitialState",
-          value: function generateInitialState() /*: State*/
-          {
+          value: function generateInitialState /*: State*/() {
             var _this$props = this.props,
               width = _this$props.width,
               breakpoints = _this$props.breakpoints,

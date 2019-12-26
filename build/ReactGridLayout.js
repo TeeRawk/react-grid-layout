@@ -184,10 +184,9 @@ function _defineProperty(obj, key, value) {
 
 // End Types
 var compactType = function compactType(
-  props
+  props /*: CompactType*/
   /*: Props*/
-) /*: CompactType*/
-{
+) {
   var _ref = props || {},
     verticalCompact = _ref.verticalCompact,
     compactType = _ref.compactType;
@@ -736,8 +735,7 @@ var ReactGridLayout =
         },
         {
           key: "placeholder",
-          value: function placeholder() /*: ?ReactElement<any>*/
-          {
+          value: function placeholder /*: ?ReactElement<any>*/() {
             var activeDrag = this.state.activeDrag;
             if (!activeDrag) return null;
             var _this$props4 = this.props,
@@ -784,10 +782,9 @@ var ReactGridLayout =
           value: function processGridItem(
             child,
             /*: ReactElement<any>*/
-            isDroppingItem
+            isDroppingItem /*: ?ReactElement<any>*/
             /*: boolean*/
-          ) /*: ?ReactElement<any>*/
-          {
+          ) {
             if (!child || !child.key) return;
             var l = (0, _utils.getLayoutItem)(
               this.state.layout,
